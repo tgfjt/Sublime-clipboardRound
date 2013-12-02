@@ -1,0 +1,18 @@
+[
+        {
+                "caption": "ClipboardRound: Paste Previous Clipboard",
+                "command": "clip_round_prev"
+        },
+        {
+                "caption": "ClipboardRound: Paste following Clipboard",
+                "command": "clip_round_next"
+        },
+        {
+                "caption": "ClipboardRound: Show Clipboard History",
+                "command": "clip_round_show"
+        },
+        {
+                "caption": "ClipboardRound: Clear Clipboard History",
+                "command": "clip_round_delete"
+        }
+]
