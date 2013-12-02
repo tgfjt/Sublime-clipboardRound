@@ -1,0 +1,89 @@
+[
+    {
+        "caption": "Preferences", 
+        "children": [
+            {
+                "caption": "Package Settings", 
+                "children": [
+                    {
+                        "caption": "Sublime-clipboardRound", 
+                        "children": [
+                            {
+                                "args": {
+                                    "file": "${packages}/Sublime-clipboardRound/Sublime-clipboardRound.sublime-settings"
+                                }, 
+                                "caption": "Settings – Default", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "args": {
+                                    "file": "${packages}/User/Sublime-clipboardRound.sublime-settings"
+                                }, 
+                                "caption": "Settings – User", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "caption": "-"
+                            }, 
+                            {
+                                "args": {
+                                    "file": "${packages}/Sublime-clipboardRound/Default (Windows).sublime-keymap", 
+                                    "platform": "Windows"
+                                }, 
+                                "caption": "Key Bindings – Default", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "args": {
+                                    "file": "${packages}/Sublime-clipboardRound/Default (OSX).sublime-keymap", 
+                                    "platform": "OSX"
+                                }, 
+                                "caption": "Key Bindings – Default", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "args": {
+                                    "file": "${packages}/Sublime-clipboardRound/Default (Linux).sublime-keymap", 
+                                    "platform": "Linux"
+                                }, 
+                                "caption": "Key Bindings – Default", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "args": {
+                                    "file": "${packages}/User/Default (Windows).sublime-keymap", 
+                                    "platform": "Windows"
+                                }, 
+                                "caption": "Key Bindings – User", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "args": {
+                                    "file": "${packages}/User/Default (OSX).sublime-keymap", 
+                                    "platform": "OSX"
+                                }, 
+                                "caption": "Key Bindings – User", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "args": {
+                                    "file": "${packages}/User/Default (Linux).sublime-keymap", 
+                                    "platform": "Linux"
+                                }, 
+                                "caption": "Key Bindings – User", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "caption": "-"
+                            }
+                        ]
+                    }
+                ], 
+                "id": "package-settings", 
+                "mnemonic": "P"
+            }
+        ], 
+        "id": "preferences", 
+        "mnemonic": "n"
+    }
+]
