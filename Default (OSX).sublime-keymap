@@ -47,5 +47,5 @@
     {
         "keys": ["ctrl+r", "ctrl+n"],
         "command": "clip_round_next"
-    },
+    }
 ]

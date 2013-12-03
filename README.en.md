@@ -1,7 +1,7 @@
 Sublime-clipboardRound
 ======================
 
-Reuse Clipboard History for Sublime Text.
+Reuse Clipboard History for Sublime Text on Mac OS X.
 
 This Plugin inspire from...
 
