@@ -1,5 +1,6 @@
 [
     {
+        "keys": ["super+v"],
         "command": "clipboard_paste", 
         "context": [
             {
@@ -7,12 +8,10 @@
                 "operand": true, 
                 "operator": "equal"
             }
-        ], 
-        "keys": [
-            "super+v"
         ]
     }, 
     {
+        "keys": ["super+c"],
         "command": "clipboard_copy", 
         "context": [
             {
@@ -20,12 +19,10 @@
                 "operand": true, 
                 "operator": "equal"
             }
-        ], 
-        "keys": [
-            "super+c"
         ]
     },
     {
+        "keys": ["super+x"],
         "command": "clipboard_copy", 
         "context": [
             {
@@ -33,76 +30,6 @@
                 "operand": true, 
                 "operator": "equal"
             }
-        ], 
-        "keys": [
-            "super+x"
-        ]
-    },
-    {
-        "command": "clip_round_prev", 
-        "keys": [
-            "ctrl+r", 
-            "ctrl+p"
-        ]
-    },
-    {
-        "command": "clip_round_next", 
-        "keys": [
-            "ctrl+r", 
-            "ctrl+n"
-        ]
-    },
-    {
-        "command": "clip_round_show", 
-        "keys": [
-            "ctrl+r", 
-            "ctrl+l"
-        ]
-    },
-    {
-        "command": "clip_round_clear", 
-        "keys": [
-            "ctrl+r", 
-            "ctrl+d"
-        ]
-    },
-    {
-        "command": "set_action", 
-        "context": [
-            {
-                "key": "clipboard_round_paste", 
-                "operand": true, 
-                "operator": "equal"
-            }
-        ], 
-        "keys": [
-            "p"
-        ]
-    },
-    {
-        "command": "set_action", 
-        "context": [
-            {
-                "key": "clipboard_round_vi", 
-                "operand": true, 
-                "operator": "equal"
-            }
-        ], 
-        "keys": [
-            "y"
-        ]
-    },
-    {
-        "command": "set_action", 
-        "context": [
-            {
-                "key": "clipboard_round_vi", 
-                "operand": true, 
-                "operator": "equal"
-            }
-        ], 
-        "keys": [
-            "d"
         ]
     }
 ]
