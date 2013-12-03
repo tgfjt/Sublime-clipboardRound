@@ -3,10 +3,9 @@ import sublime, sublime_plugin
 history = []
 menuitems = []
 history_index = 0
-data = 0
 
 def setClipboardHistory():
-    global history_index, menuitems, history, data
+    global history_index, menuitems, history
 
     try:# win32
         import win32clipboard
@@ -21,6 +20,7 @@ def setClipboardHistory():
         ctypes.windll.user32.OpenClipboard(None)
         pc = ctypes.windll.user32.GetClipboardData(1)
         data = ctypes.c_char_p(pc).value.decode()
+        ctypes.windll.user32.CloseClipboard()
     except:
         pass
 
@@ -42,7 +42,9 @@ def setClipboardHistory():
     except:
         pass
 
-    if data in history:
+    if not 'data' in locals():
+        return None
+    elif data in history:
         return None
     elif data == '':
         return None
@@ -113,7 +115,6 @@ class Clip_round_clearCommand(sublime_plugin.TextCommand):
         del menuitems[:]
         del history[:]
         history_index = 0
-        data = 0
         sublime.set_clipboard('')
         print('clipboardRound: clear Clipboard History.')
 
