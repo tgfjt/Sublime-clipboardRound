@@ -4,9 +4,7 @@ history = []
 menuitems = []
 history_index = 0
 
-def setClipboardHistory():
-    global history_index, menuitems, history
-
+def getClipboardData():
     try:# win32
         import win32clipboard
         win32clipboard.OpenClipboard()
@@ -43,6 +41,17 @@ def setClipboardHistory():
         pass
 
     if not 'data' in locals():
+        return False
+    else:
+        return data
+
+
+def setClipboardHistory():
+    global history_index, menuitems, history
+
+    data = getClipboardData()
+
+    if data == False:
         return None
     elif data in history:
         return None
