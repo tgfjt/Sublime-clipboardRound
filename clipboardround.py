@@ -1,5 +1,4 @@
 import sublime, sublime_plugin
-import subprocess
 
 history = []
 menuitems = []
@@ -8,10 +7,40 @@ data = 0
 
 def setClipboardHistory():
     global history_index, menuitems, history, data
-    p = subprocess.Popen(['pbpaste'], stdout=subprocess.PIPE)
-    retcode = p.wait()
-    clip = p.stdout.read()
-    data = clip.decode()
+
+    try:# win32
+        import win32clipboard
+        win32clipboard.OpenClipboard()
+        data = win32clipboard.GetClipboardData()
+        win32clipboard.CloseClipboard()
+    except:
+        pass
+
+    try:# windows7
+        import ctypes
+        ctypes.windll.user32.OpenClipboard(None)
+        pc = ctypes.user32.GetClipboard(1)
+        data = ctypes.c_char_p(pc).value.decode()
+    except:
+        pass
+
+    try:# mac
+        import subprocess
+        p = subprocess.Popen(['pbpaste'], stdout=subprocess.PIPE)
+        retcode = p.wait()
+        clip = p.stdout.read()
+        data = clip.decode()
+    except:
+        pass
+
+    try:# xclip (Linux)
+        import subprocess
+        p = subprocess.Popen(['xclip', '-o'], stdout=subprocess.PIPE)
+        retcode = p.wait()
+        clip = p.stdout.read()
+        data = clip.decode()
+    except:
+        pass
 
     if data in history:
         return None

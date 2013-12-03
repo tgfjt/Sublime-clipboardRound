@@ -1,7 +1,7 @@
 Sublime-clipboardRound
 ======================
 
-クリップボード履歴の再利用を行います for Sublime Text on Max OS X.
+クリップボード履歴の再利用を行います for Sublime Text.
 
 [README for English](https://github.com/tgfjt/Sublime-clipboardRound/blob/master/README.en.md)
 
