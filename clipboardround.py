@@ -31,9 +31,18 @@ def getClipboardData():
     except:
         pass
 
-    try:# xclip (Linux)
+    try:# xclip
         import subprocess
         p = subprocess.Popen(['xclip', '-o'], stdout=subprocess.PIPE)
+        retcode = p.wait()
+        clip = p.stdout.read()
+        data = clip.decode()
+    except:
+        pass
+
+    try:# xsel
+        import subprocess
+        p = subprocess.Popen(['xclip', '-bo'], stdout=subprocess.PIPE)
         retcode = p.wait()
         clip = p.stdout.read()
         data = clip.decode()
