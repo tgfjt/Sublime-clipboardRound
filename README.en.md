@@ -12,6 +12,8 @@ This Plugin inspire from...
 
 You can paste again from previous or following clipboard history.
 
+![image](https://raw.github.com/tgfjt/Sublime-clipboardRound/master/clipboardRound.gif)
+
 ##How to Use
 
 * re-paste Pre clipboard with &lt;C-r&gt;&lt;C-p&gt;

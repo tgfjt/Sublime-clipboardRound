@@ -16,6 +16,8 @@ This Plugin inspire from...
 
 ペースト時に、クリップボード履歴を遡ってペーストし直すことが出来ます。
 
+![image](https://raw.github.com/tgfjt/Sublime-clipboardRound/master/clipboardRound.gif)
+
 ##使い方
 
 &lt;C-r&gt;&lt;C-p&gt;で貼り付けたテキストを前の履歴に、
