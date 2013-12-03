@@ -19,7 +19,7 @@ def setClipboardHistory():
     try:# windows7
         import ctypes
         ctypes.windll.user32.OpenClipboard(None)
-        pc = ctypes.user32.GetClipboard(1)
+        pc = ctypes.windll.user32.GetClipboardData(1)
         data = ctypes.c_char_p(pc).value.decode()
     except:
         pass
