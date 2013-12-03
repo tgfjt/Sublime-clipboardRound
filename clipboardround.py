@@ -81,7 +81,6 @@ class Clip_round_showCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
         global menuitems
-        print(menuitems)
         if menuitems == []:
             return None
 
