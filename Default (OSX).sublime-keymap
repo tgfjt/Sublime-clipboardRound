@@ -31,5 +31,21 @@
                 "operator": "equal"
             }
         ]
-    }
+    },
+    {
+        "keys": ["ctrl+r", "ctrl+l"],
+        "command": "clip_round_show"
+    },
+    {
+        "keys": ["ctrl+r", "ctrl+d"],
+        "command": "clip_round_clear"
+    },
+    {
+        "keys": ["ctrl+r", "ctrl+p"],
+        "command": "clip_round_prev"
+    },
+    {
+        "keys": ["ctrl+r", "ctrl+n"],
+        "command": "clip_round_next"
+    },
 ]

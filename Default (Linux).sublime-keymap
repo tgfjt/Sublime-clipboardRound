@@ -65,44 +65,5 @@
             "ctrl+r", 
             "ctrl+d"
         ]
-    },
-    {
-        "command": "set_action", 
-        "context": [
-            {
-                "key": "clipboard_round_paste", 
-                "operand": true, 
-                "operator": "equal"
-            }
-        ], 
-        "keys": [
-            "p"
-        ]
-    },
-    {
-        "command": "set_action", 
-        "context": [
-            {
-                "key": "clipboard_round_vi", 
-                "operand": true, 
-                "operator": "equal"
-            }
-        ], 
-        "keys": [
-            "y"
-        ]
-    },
-    {
-        "command": "set_action", 
-        "context": [
-            {
-                "key": "clipboard_round_vi", 
-                "operand": true, 
-                "operator": "equal"
-            }
-        ], 
-        "keys": [
-            "d"
-        ]
     }
 ]
