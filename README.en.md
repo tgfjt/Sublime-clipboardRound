@@ -1,5 +1,6 @@
 Sublime-clipboardRound
 ======================
+![image](https://badge.waffle.io/tgfjt/Sublime-clipboardRound.png?label=ready)
 
 Reuse Clipboard History for Sublime Text.
 

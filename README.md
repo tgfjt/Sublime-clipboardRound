@@ -1,5 +1,6 @@
 Sublime-clipboardRound
 ======================
+![image](https://badge.waffle.io/tgfjt/Sublime-clipboardRound.png?label=ready)
 
 クリップボード履歴の再利用を行います for Sublime Text.
 
