@@ -76,7 +76,7 @@ def setClipboardHistory():
         menuitems = history
 
     if limit < len(history):
-        for i in xrange(len(history) - limit):
+        for i in range(len(history) - limit):
             history.pop()
             menuitems.pop()
 
